@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form id="pow" action="" onsubmit="pow();return false">
+    <input type="text" name="x" id="x" value="" />
+    <input type="text" name="y" id="y" value="" />
+    <button type="submit">Результат</button>
+  </form>
+  <p id="result"></p>
+  <script>
+  function pow(){
+	x = document.forms.pow.elements.x.value
+	y = document.forms.pow.elements.y.value
+	result = document.getElementById('result')
+	powResult = Math.pow(x,y)
+	result.textContent = 'Результат: ' + powResult
+  }
+  </script>
+</body>
+
+</html>

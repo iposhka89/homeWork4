@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HomeWork4</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var obj = {name:'sjghin'};
+
+		function isEmpty(obj) {
+			for (var i in obj) {
+        		if (obj.hasOwnProperty(i)) {
+            		return false;
+        		}
+    		}
+    		return true;
+		}
+		alert(isEmpty(obj));
+	</script>
+</body>
+</html>
